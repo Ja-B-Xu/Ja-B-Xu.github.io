@@ -3,62 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Jason Xu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            align-items: flex-start;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        main {
-            max-width: 600px;
-            flex: 1;
-            margin-right: 20px;
-        }
+
         header {
-            margin-right: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+	    font-size: 30px;
         }
-        h1, h2 {
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
             color: #333;
         }
+
         p {
             line-height: 1.6;
             color: #555;
         }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
         video {
             width: 100%;
-            max-width: 1000px; /* Adjust the maximum width as needed */
-        }
-	aside {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
         }
 	
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Jason Xu</h1>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>Hello, my name is Jason. I am a computer science student at the University of Michigan.</p>
-        </section>
-        <section>
-            <h2>EECS 498 - Project 1</h2>
-            <p>For Project 1, I worked with two other students to create a VR simulation of a specific room on campus. For this project, we used Unreal Engine 5, including visual scripting. We utilized Jira to manage our project. </p>
-        </section>
-    </main>
 
-    <aside>
-        <video width="1000" height="500" controls>
-            <source src="vid.webm" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-    </aside>
+    <header>
+        <b>Jason Xu</b>
+        <p>Computer Science Portfolio</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello, my name is Jason. I am a computer science student at the University of Michigan.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>EECS 498 - Project 1</h3>
+                <p>For Project 1, I worked with two other students to create a VR simulation of a specific room on campus. For this project, we used Unreal Engine 5, including visual scripting. We utilized Jira to manage our project.</p>
+                <video controls>
+                    <source src="p1-video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, C++, C, Rust, OCaml, SQL</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; jbxu@umich.edu</p>
+    </footer>
+
 </body>
 </html>
+
+
